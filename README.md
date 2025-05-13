@@ -1,6 +1,6 @@
 # financeMONO
 
-Simple financial access and tracking application.
+All internet banking branches, electronic payment institutions (EMI) and commodity access and tracking. Container-based Chromium-based electron wrapper.
 
 ![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/banner.png?raw=true)
 
