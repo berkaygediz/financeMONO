@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     gold: [
       {
-        name: "İZKO Güncel Kur",
+        name: "İZKO",
         url: "https://www.izko.org.tr/Home/GuncelKur",
       },
       { name: "Harem Altın", url: "https://canlipiyasalar.haremaltin.com/" },
