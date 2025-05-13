@@ -1,8 +1,8 @@
 # financeMONO
 
-![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/banner.png?raw=true)
-
 Simple financial access and tracking application.
+
+![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/banner.png?raw=true)
 
 ## Features
 
