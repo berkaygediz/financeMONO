@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>financeMONO</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self'; style-src 'self' 'unsafe-inline';"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        margin: 0;
+        background-color: #e0f2fe;
+        color: #1e3a8a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        width: 90%;
+        max-width: 950px;
+      }
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #1d4ed8;
+        margin-top: 0;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 22px;
+        font-weight: 500;
+        color: #1e40af;
+        border-bottom: 2px solid #93c5fd;
+        padding-bottom: 12px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      #banks-list,
+      #emi-list,
+      #gold-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+      }
+      #banks-list li,
+      #emi-list li,
+      #gold-list li {
+        flex-basis: calc(33.333% - 14px);
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      button.site-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #2563eb;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+        height: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      button.site-button:hover {
+        background-color: #1d4ed8;
+        transform: translateY(-2px);
+      }
+      button.site-button:active {
+        transform: translateY(0px);
+      }
+      .category {
+        margin-bottom: 35px;
+      }
+      .category > p {
+        font-size: 0.95em;
+        color: #3b82f6;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      .disclaimer-container {
+        width: 90%;
+        max-width: 950px;
+        margin-top: 40px;
+        padding: 25px;
+        background-color: #dbeafe;
+        border-radius: 12px;
+        border: 1px solid #93c5fd;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        font-size: 14px;
+        color: #1e3a8a;
+        line-height: 1.6;
+      }
+      .disclaimer-container h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1d4ed8;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+      .disclaimer-container p {
+        margin-bottom: 12px;
+      }
+      .disclaimer-container p:last-child {
+        margin-bottom: 0;
+      }
+      .disclaimer-container hr {
+        margin: 20px 0;
+        border-color: #bfdbfe;
+      }
+      @media (max-width: 820px) {
+        #banks-list li,
+        #emi-list li,
+        #gold-list li {
+          flex-basis: calc(50% - 10px);
+        }
+      }
+      @media (max-width: 540px) {
+        #banks-list li,
+        #emi-list li,
+        #gold-list li {
+          flex-basis: 100%;
+          gap: 15px;
+        }
+        button.site-button {
+          padding: 12px 15px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        .container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>financeMONO</h1>
+      <p style="text-align: center; margin-bottom: 25px; color: #3b82f6">
+        This is a tool to access internet banking pages and financial
+        information sites. It is an open-source project.
+      </p>
+
+      <div class="category">
+        <h2>Banks</h2>
+        <ul id="banks-list"></ul>
+      </div>
+
+      <div class="category">
+        <h2>Electronic Money Institution (EMI)</h2>
+        <ul id="emi-list"></ul>
+      </div>
+
+      <div class="category">
+        <h2>Gold</h2>
+        <ul id="gold-list"></ul>
+      </div>
+    </div>
+
+    <div class="disclaimer-container">
+      <h3>Disclaimer / Uyarı</h3>
+      <p>
+        <strong>English:</strong> This application is a tool designed to
+        facilitate access to publicly available internet banking login pages and
+        financial information sites. It is an open-source project. The code
+        structure of forks or derivative versions may be altered by other
+        developers. The original author assumes no responsibility for changes
+        made in such forks or for any security issues that may arise from their
+        use. Always ensure you are using a trusted version of the application
+        and verify the URLs.
+      </p>
+      <hr />
+      <p>
+        <strong>Türkçe:</strong> Bu uygulama, halka açık internet bankacılığı
+        giriş sayfalarına ve finansal bilgi sitelerine erişimi kolaylaştırmak
+        için tasarlanmış bir araçtır. Açık kaynak kodlu bir projedir. Fork'ların
+        (çatallanmış versiyonların) veya türetilmiş sürümlerin kod yapısı başka
+        geliştiriciler tarafından değiştirilebilir. Orijinal yazar, bu tür
+        fork'larda yapılan değişikliklerden veya bunların kullanımından
+        kaynaklanabilecek güvenlik sorunlarından sorumlu tutulamaz. Her zaman
+        uygulamanın güvenilir bir sürümünü kullandığınızdan emin olun ve
+        URL'leri doğrulayın.
+      </p>
+      <p><strong>Available countries:</strong> Turkiye (Turkey)</p>
+      <hr />
+      <p>Device name will appear as <strong>'Electron'</strong>.</p>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
