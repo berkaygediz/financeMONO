@@ -8,13 +8,11 @@ const __dirname = path.dirname(__filename);
 let mainWindow;
 
 function createWindow() {
-  const preloadScriptPath = path.join(__dirname, "preload.js");
-
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 800,
     webPreferences: {
-      preload: preloadScriptPath,
+      preload: path.join(__dirname, "preload.js"),
       nodeIntegration: false,
       contextIsolation: true,
     },
@@ -91,6 +89,8 @@ function createMenu() {
         { role: "zoomOut", label: "Zoom Out" },
         { type: "separator" },
         { role: "togglefullscreen", label: "Fullscreen" },
+        { role: "minimize", label: "Minimize" },
+        { role: "close", label: "Close" },
       ],
     },
   ];

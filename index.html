@@ -54,7 +54,9 @@
       }
       #banks-list,
       #emi-list,
-      #gold-list {
+      #gold-list,
+      #stocks-list,
+      #crypto-list {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -62,7 +64,9 @@
       }
       #banks-list li,
       #emi-list li,
-      #gold-list li {
+      #gold-list li,
+      #stocks-list li,
+      #crypto-list li {
         flex-basis: calc(33.333% - 14px);
         margin-bottom: 0;
       }
@@ -138,14 +142,18 @@
       @media (max-width: 820px) {
         #banks-list li,
         #emi-list li,
-        #gold-list li {
+        #gold-list li,
+        #stocks-list li,
+        #crypto-list li {
           flex-basis: calc(50% - 10px);
         }
       }
       @media (max-width: 540px) {
         #banks-list li,
         #emi-list li,
-        #gold-list li {
+        #gold-list li,
+        #stocks-list li,
+        #crypto-list li {
           flex-basis: 100%;
           gap: 15px;
         }
@@ -168,9 +176,24 @@
     <div class="container">
       <h1>financeMONO</h1>
       <p style="text-align: center; margin-bottom: 25px; color: #3b82f6">
-        This is a tool to access internet banking pages and financial
-        information sites. It is an open-source project.
+        One app to access all your financial information.
       </p>
+
+      <div style="margin-bottom: 20px; text-align: center">
+        <label for="countryFilter" style="font-weight: 500"
+          >Filter by country:</label
+        >
+        <select
+          id="countryFilter"
+          style="margin-left: 10px; padding: 6px 10px; border-radius: 6px"
+        >
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Turkiye">Turkiye</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Germany">Germany</option>
+          <option value="Global">Global</option>
+        </select>
+      </div>
 
       <div class="category">
         <h2>Banks</h2>
@@ -186,10 +209,18 @@
         <h2>Gold</h2>
         <ul id="gold-list"></ul>
       </div>
+      <div class="category">
+        <h2>Stock Market</h2>
+        <ul id="stocks-list"></ul>
+      </div>
+      <div class="category">
+        <h2>Cryptocurrency</h2>
+        <ul id="crypto-list"></ul>
+      </div>
     </div>
 
     <div class="disclaimer-container">
-      <h3>Disclaimer / Uyarı</h3>
+      <h3>Disclaimer</h3>
       <p>
         <strong>English:</strong> This application is a tool designed to
         facilitate access to publicly available internet banking login pages and
@@ -200,19 +231,6 @@
         use. Always ensure you are using a trusted version of the application
         and verify the URLs.
       </p>
-      <hr />
-      <p>
-        <strong>Türkçe:</strong> Bu uygulama, halka açık internet bankacılığı
-        giriş sayfalarına ve finansal bilgi sitelerine erişimi kolaylaştırmak
-        için tasarlanmış bir araçtır. Açık kaynak kodlu bir projedir. Fork'ların
-        (çatallanmış versiyonların) veya türetilmiş sürümlerin kod yapısı başka
-        geliştiriciler tarafından değiştirilebilir. Orijinal yazar, bu tür
-        fork'larda yapılan değişikliklerden veya bunların kullanımından
-        kaynaklanabilecek güvenlik sorunlarından sorumlu tutulamaz. Her zaman
-        uygulamanın güvenilir bir sürümünü kullandığınızdan emin olun ve
-        URL'leri doğrulayın.
-      </p>
-      <p><strong>Available countries:</strong> Turkiye (Turkey)</p>
       <hr />
       <p>Device name will appear as <strong>'Electron'</strong>.</p>
     </div>

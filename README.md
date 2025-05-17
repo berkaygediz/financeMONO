@@ -1,18 +1,22 @@
 # financeMONO
 
-All internet banking branches, electronic payment institutions (EMI) and commodity access and tracking. Container-based Chromium-based electron wrapper.
+![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/images/icons/android/res/mipmap-xhdpi/financeMONO.png?raw=true)
 
-![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/banner.png?raw=true)
+All internet banking branches, electronic payment institutions (EMI), gold, stock market, and cryptocurrency data in one place.
+
+![financeMONO](https://github.com/berkaygediz/financeMONO/blob/main/images/banner/banner.png?raw=true)
 
 ## Features
 
-- Internet banking
+- Internet banking branches
 - Electronic money institutions (EMI)
 - Gold
+- Stock market
+- Cryptocurrency
 
 ## Available Countries
 
-- Türkiye (Turkey)
+- Turkiye (Turkey), United Kingdom, Thailand, Germany, Netherlands, France, Italy, Spain, Portugal, Belgium, Switzerland, Austria, Czech Republic, Poland, Romania, Hungary, Bulgaria, Greece, Denmark, Finland, Norway, Sweden, Ireland
 
 ## Contributing
 
