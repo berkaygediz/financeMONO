@@ -4,6 +4,10 @@
   "description": "All internet banking branches, electronic payment institutions (EMI), gold, stock market, and cryptocurrency data in one place.",
   "main": "main.js",
   "type": "module",
+  "build": {
+    "appId": "com.berkaygediz.financemono",
+    "productName": "financeMONO"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
