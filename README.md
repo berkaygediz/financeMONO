@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/berkaygediz/financeMONO/blob/main/images/banner/banner.png?raw=true" alt="financeMONO Banner" />
+  <img src="https://github.com/berkaygediz/financeMONO/blob/main/images/banner/banner_2.png?raw=true" alt="financeMONO Banner" />
 </p>
 
 ---
