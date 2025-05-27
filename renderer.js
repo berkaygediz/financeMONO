@@ -169,11 +169,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         country: "Turkiye",
       },
       {
-        name: "Papara",
-        url: "https://www.papara.com/personal/auth/login/email-phone",
-        country: "Turkiye",
-      },
-      {
         name: "Tami",
         url: "https://portal.tami.com.tr/",
         country: "Turkiye",
