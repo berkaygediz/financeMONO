@@ -188,8 +188,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         country: "Turkiye",
       },
       {
-        name: "Papara",
-        url: "https://www.papara.com/personal/auth/login/email-phone",
+        name: "PARAM",
+        url: "https://isube.param.com.tr/",
+        country: "Turkiye",
+      },
+      {
+        name: "PeP Paladyum Electronik Para",
+        url: "https://online.peple.com.tr/auth/customer/logon",
         country: "Turkiye",
       },
       {
