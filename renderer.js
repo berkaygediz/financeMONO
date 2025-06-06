@@ -139,6 +139,26 @@ document.addEventListener("DOMContentLoaded", async () => {
         url: "https://acikdeniz.denizbank.com/",
         country: "Turkiye",
       },
+      {
+        name: "Unibank Azerbaijan",
+        url: "https://onlineservices.unibank.az/PersonalCabinet/login.html?lang=az",
+        country: "Azerbaijan",
+      },
+      {
+        name: "ABB-Bank Azerbaijan",
+        url: "https://cb.abb-bank.az/login",
+        country: "Azerbaijan",
+      },
+      {
+        name: "Yelo Bank Azerbaijan",
+        url: "https://ib.yelo.az/az/login",
+        country: "Azerbaijan",
+      },
+      {
+        name: "Expressbank Azerbaijan",
+        url: "https://online.expressbank.az/OnlinePayments/",
+        country: "Azerbaijan",
+      },
     ],
     emi: [
       {
@@ -162,15 +182,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         url: "https://connect.stripe.com/express_login",
         country: "Global",
       },
-
       {
         name: "Papel Türkiye",
         url: "https://mywallet.papel.com.tr/login",
         country: "Turkiye",
       },
       {
-        name: "Papara",
-        url: "https://www.papara.com/personal/auth/login/email-phone",
+        name: "PARAM",
+        url: "https://isube.param.com.tr/",
+        country: "Turkiye",
+      },
+      {
+        name: "PeP Paladyum Electronik Para",
+        url: "https://online.peple.com.tr/auth/customer/logon",
         country: "Turkiye",
       },
       {
@@ -211,6 +235,66 @@ document.addEventListener("DOMContentLoaded", async () => {
         name: "Interactive Brokers",
         url: "https://www.interactivebrokers.co.uk/sso/Login",
         country: "United Kingdom",
+      },
+      {
+        name: "Robinhood",
+        url: "https://robinhood.com/login/",
+        country: "Global",
+      },
+      {
+        name: "Oyak Yatırım",
+        url: "https://sube.oyakyatirim.com.tr/tr/Account/Login",
+        country: "Turkiye",
+      },
+      {
+        name: "QNB Invest Türkiye",
+        url: "https://internetsube.qnbinvest.com.tr/#!/login",
+        country: "Turkiye",
+      },
+      {
+        name: "A1 Capital Türkiye (New)",
+        url: "https://trade.a1capital.com.tr/auth/login",
+        country: "Turkiye",
+      },
+      {
+        name: "A1 Capital Türkiye (Old)",
+        url: "https://esube.a1capital.com.tr/user/login/",
+        country: "Turkiye",
+      },
+      {
+        name: "Ak Yatırım TradeAll",
+        url: "https://up.tradeallup.com/Login/?ReturnUrl=%2f",
+        country: "Turkiye",
+      },
+      {
+        name: "Tacirler Yatırım",
+        url: "https://www.tacirlermenkul.com.tr/TradeMaster",
+        country: "Turkiye",
+      },
+      {
+        name: "Ziraat Yatırım (E-Şube)",
+        url: "https://esube1.ziraatyatirim.com.tr/sanalsube/tr/Account/Login",
+        country: "Turkiye",
+      },
+      {
+        name: "Ziraat Yatırım (Web Trader)",
+        url: "https://ziraatyatirim.matrikswebtrader.com/tr/login",
+        country: "Turkiye",
+      },
+      {
+        name: "Gedik Yatırım Online",
+        url: "https://bist.gedik.com/",
+        country: "Turkiye",
+      },
+      {
+        name: "Gedik Yatırım UP Trader",
+        url: "https://uptrader.gedik.com/Login/?ReturnUrl=%2F",
+        country: "Turkiye",
+      },
+      {
+        name: "Piapiri (ÜNLÜ & Co)",
+        url: "https://websube.piapiri.com/tr/Account/Login",
+        country: "Turkiye",
       },
     ],
     crypto: [
