@@ -155,12 +155,117 @@ document.addEventListener("DOMContentLoaded", async () => {
         country: "Azerbaijan",
       },
       {
+        name: "Bank of America",
+        url: "https://secure.bankofamerica.com/login/sign-in/signOnV2Screen.go",
+        country: "United States",
+      },
+      {
+        name: "TD Bank USA",
+        url: "https://onlinebanking.tdbank.com/#/authentication/login",
+        country: "United States",
+      },
+      {
+        name: "Republic Bank USA",
+        url: "https://www.republicbank.com/dbank/live/app/login/consumer",
+        country: "United States",
+      },
+      {
+        name: "American Bank USA",
+        url: "https://cibng.ibanking-services.com/eAM/Credential/Index?FIORG=41T&orgId=41T_114903284&FIFID=114903284&brand=41T_114903284&appId=ceb",
+        country: "United States",
+      },
+      {
         name: "Expressbank Azerbaijan",
         url: "https://online.expressbank.az/OnlinePayments/",
         country: "Azerbaijan",
       },
+      {
+        name: "Bank of China Global",
+        url: "https://ebsnew.boc.cn/boc15/login.html?locale=en",
+        country: "Global",
+      },
+      {
+        name: "Bank of China Hong Kong",
+        url: "https://its.bochk.com/login/ibs_lgn_index_e.jsp",
+        country: "Hong Kong",
+      },
+      {
+        name: "MC Bank Rus",
+        url: "https://mbp.mcbankrus.ru/#/",
+        country: "Russia",
+      },
+      {
+        name: "131 Bank Russia",
+        url: "https://online.131.ru/",
+        country: "Russia",
+      },
+      {
+        name: "Raiffeisen Bank Russia",
+        url: "https://online.raiffeisen.ru/login/main",
+        country: "Russia",
+      },
+      {
+        name: "OTP Bank Russia",
+        url: "https://online.otpbank.ru/login/product-auth",
+        country: "Russia",
+      },
+      {
+        name: "Sberbank Russia",
+        url: "https://online.sberbank.ru/CSAFront/index.do",
+        country: "Russia",
+      },
+      {
+        name: "Gazprombank Russia",
+        url: "https://ib.online.gpb.ru/login",
+        country: "Russia",
+      },
     ],
     emi: [
+      {
+        name: "Venmo",
+        url: "https://id.venmo.com/signin#/lgn",
+        country: "United States",
+      },
+      {
+        name: "Cash App",
+        url: "https://cash.app/login",
+        country: "United States",
+      },
+      {
+        name: "Green Dot",
+        url: "https://secure.greendot.com/greendot/login",
+        country: "United States",
+      },
+      {
+        name: "Chime",
+        url: "https://app.chime.com/login",
+        country: "United States",
+      },
+      {
+        name: "Vivid Money",
+        url: "https://business.vivid.money/en/login",
+        country: "Germany",
+      },
+      {
+        name: "bunq NL",
+        url: "https://web.bunq.com/",
+        country: "Netherlands",
+      },
+      {
+        name: "Nickel FR",
+        url: "https://app.nickel.eu/",
+        country: "France",
+      },
+      {
+        name: "Viva Wallet",
+        url: "https://accounts.vivapayments.com/Account/Login",
+        country: "Global",
+      },
+      {
+        name: "Skrill",
+        url: "https://account.skrill.com/wallet/account/login?locale=en",
+        country: "Global",
+      },
       {
         name: "Revolut",
         url: "https://app.revolut.com/login",
