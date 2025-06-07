@@ -1,6 +1,6 @@
 {
   "name": "financemono",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "All internet banking branches, electronic payment institutions (EMI), gold, stock market, and cryptocurrency data in one place.",
   "main": "main.js",
   "type": "module",
